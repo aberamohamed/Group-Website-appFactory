@@ -6,6 +6,27 @@
     <title>@ViewBag.Title - My ASP.NET Application</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+
+
+    <!-- Favicons -->
+    <link href="Content/img/favicon.png" rel="icon">
+    <link href="Content/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+
+    <!-- Bootstrap CSS File -->
+    <link href="Content/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Libraries CSS Files -->
+    <link href="Content/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="Content/lib/animate/animate.min.css" rel="stylesheet">
+    <link href="Content/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="Content/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="Content/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Main Stylesheet File -->
+    <link href="Content/css/style.css" rel="stylesheet">
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -16,11 +37,11 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+               
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                   
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                 </ul>
@@ -38,5 +59,22 @@
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
+
+    <script src="Content/lib/jquery/jquery.min.js"></script>
+    <script src="Content/lib/jquery/jquery-migrate.min.js"></script>
+    <script src="Content/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="Content/lib/easing/easing.min.js"></script>
+    <script src="Content/lib/mobile-nav/mobile-nav.js"></script>
+    <script src="Content/lib/wow/wow.min.js"></script>
+    <script src="Content/lib/waypoints/waypoints.min.js"></script>
+    <script src="Content/lib/counterup/counterup.min.js"></script>
+    <script src="Content/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="Content/lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="Content/lib/lightbox/js/lightbox.min.js"></script>
+    <!-- Contact Form JavaScript File -->
+    <script src="Content/contactform/contactform.js"></script>
+
+    <!-- Template Main Javascript File -->
+    <script src="Content/js/main.js"></script>
 </body>
 </html>
